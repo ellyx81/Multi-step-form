@@ -223,9 +223,16 @@ body {
     padding: 15px;
     font-size: 0.8rem;
   }
+  .contact-form__button-container {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 20px 15px;
+    background-color: hsl(0, 0%, 100%);
+  }
   .contact-form__button {
-    position: absolute;
-    bottom: 20px;
-    right: 10px;
+    border-radius: 5px;
+    font-size: 0.8rem;
   }
 }/*# sourceMappingURL=style.css.map */
