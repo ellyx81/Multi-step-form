@@ -1,0 +1,272 @@
+$marine-blue: hsl(213, 96%, 18%);
+$purplish-blue: hsl(243, 100%, 62%);
+$pastel-blue: hsl(228, 100%, 84%);
+$light-blue: hsl(206, 94%, 87%);
+$strawberry-red: hsl(354, 84%, 57%);
+$cool-gray: hsl(231, 11%, 63%);
+$light-gray: hsl(229, 24%, 87%);
+$magnolia: hsl(217, 100%, 97%);
+$alabaster: hsl(231, 100%, 99%);
+$white: hsl(0, 0%, 100%);
+$shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+
+@font-face { 
+  font-family: 'Ubuntu';
+  font-weight: 300;
+  src: url('assets/fonts/ubuntu-light-webfont.woff2') format('woff2'),
+       url('assets/fonts/ubuntu-light-webfont.woff') format('woff');
+}
+
+@font-face { 
+  font-family: 'Ubuntu';
+  font-weight: 400;
+  src: url('assets/fonts/ubuntu-regular-webfont.woff2') format('woff2'),
+       url('assets/fonts/ubuntu-regular-webfont.woff') format('woff');
+}
+
+@font-face { 
+  font-family: 'Ubuntu';
+  font-weight: 500;
+  src: url('assets/fonts/ubuntu-medium-webfont.woff2') format('woff2'),
+       url('assets/fonts/ubuntu-medium-webfont.woff') format('woff');
+}
+
+@font-face { 
+  font-family: 'Ubuntu';
+  font-weight: 700;
+  src: url('assets/fonts/ubuntu-bold-webfont.woff2') format('woff2'),
+       url('assets/fonts/ubuntu-bold-webfont.woff') format('woff');
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, 
+*::before, 
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: $magnolia;
+  font-family: 'Ubuntu', sans-serif;
+  margin: 0px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  background-color: $white;
+  width: 900px;
+  margin: auto;
+  margin-top: 70px;
+  padding: 15px;
+  border-radius: 18px;
+  box-shadow: $shadow;
+}
+
+.sidebar {
+  background-image: url('assets/images/bg-sidebar-desktop.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  color: $white;
+}
+
+.sidebar__content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 15px 0px;
+}
+
+.sidebar__left {
+  border-radius: 30px;
+  border: 1px solid $white;
+  padding: 10px 15px;
+  font-size: 1rem;
+  margin-right: 20px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+}
+
+.sidebar__right {
+  width: 100%;
+}
+
+.sidebar__subheading {
+  opacity: 0.5;
+  font-size: 0.8rem;
+  line-height: 60%;
+  font-weight: 300;
+}
+
+.sidebar__heading {
+  font-size: 1rem;
+  line-height: 60%;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.main {
+  padding: 20px 60px;
+  color: $marine-blue;
+}
+
+.main__heading {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 70%;
+}
+
+.main__subheading {
+  font-size: 1rem;
+  font-weight: 400;
+  color: $cool-gray;
+  line-height: 70%;
+  margin-bottom: 50px;
+}
+
+.contact-form {
+  padding: 10px 0px;
+}
+
+.contact-form__content {
+  margin-bottom: 30px;
+}
+
+.contact-form__label {
+  font-size: .9rem;
+  font-weight: 500;
+  line-height: 40%;
+}
+
+.contact-form__input {
+  width: 100%;
+  height: 50px;
+  border: 1px solid $light-gray;
+  border-radius: 8px;
+  padding: 20px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.contact-form__input:focus {
+  border: 1px solid $purplish-blue;
+}
+
+.contact-form__button {
+  float: right;
+  font-size: .9rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  color: $white;
+  background-color: $marine-blue;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+}
+
+.contact-form__button:hover {
+  background-color: hsl(213, 96%, 30%);
+}
+
+.attribution {
+  display: none;
+}
+
+@media only screen and (max-width: 767px) {
+  .container {
+    flex-direction: column;
+    width: 100%;
+    margin: 0px;
+    margin-top: 0px;
+    padding: 0px;
+    border-radius: 0px;
+    background-color: $magnolia;
+    box-shadow: none;
+  }
+
+  .sidebar {
+    flex-direction: row;
+    justify-content: center;
+    background-position: 0% 83%;
+    height: 160px;
+    border-radius: 0px;
+    width: 100%;
+  }
+
+  .sidebar__left {
+    font-size: .8rem;
+    font-weight: 500;
+    margin-top: -56px;
+    padding: 10px;
+    line-height: 60%;
+    
+  }
+
+  .sidebar__right {
+    display: none;
+  }
+
+  .main {
+    margin: auto;
+    margin-top: -70px;
+    padding: 0px;
+  }
+  
+  .contact-form {
+    background-color: $white;
+    box-shadow: $shadow;
+    border-radius: 10px;
+    padding: 25px 25px 10px 25px;
+    margin: 15px;
+  }
+
+  .main__heading {
+    font-size: 1.5rem;
+    line-height: 50%;
+  }
+  
+  .main__subheading {
+    line-height: 1.3;
+    margin-bottom: 25px;
+  }
+  
+  .contact-form__content {
+    margin-bottom: 28px;
+  }
+
+  .contact-form__label {
+    font-size: .8rem;
+    line-height: 20%;
+  }
+
+  .contact-form__input {
+    height: 40px;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: .8rem;
+  }
+
+  .contact-form__button {
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+  }
+
+}
+
+
+
+
+
+
+
+
