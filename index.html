@@ -7,8 +7,9 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
 
-  <title>Frontend Mentor | Multi-step form</title>
+  <title>Multi-step form</title>
 
+  
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
@@ -78,48 +79,50 @@
     <!-- Sidebar end -->
     
     <!-- Step 1 start -->
-    <div class="tab">
-      
-      <form class="contact-form">
-        <h1 class="main__heading">
-          Personal info
-        </h1>
-        <h2 class="tab__subheading">
-          Please provide your name, email address, and phone number.
-        </h2>
-        <div class="contact-form__content">
-          <h3 class="contact-form__label">
-            Name
-          </h3>
-          <input class="contact-form__input" type="text" placeholder="e.g. Stephen King"required>
-        </div>
+    <div style="display: flex; flex-direction: column;">
+      <div class="tab">
         
-        <div class="contact-form__content">
-          <h3 class="contact-form__label">
-            Email Address
-          </h3>
-          <input class="contact-form__input" type="email" placeholder="e.g. stephenking@lorem.com" required>
-        </div>
+        <form class="contact-form">
+          <h1 class="main__heading">
+            Personal info
+          </h1>
+          <h2 class="tab__subheading">
+            Please provide your name, email address, and phone number.
+          </h2>
+          <div class="contact-form__content">
+            <h3 class="contact-form__label">
+              Name
+            </h3>
+            <input class="contact-form__input" type="text" placeholder="e.g. Stephen King"required>
+          </div>
+          
+          <div class="contact-form__content">
+            <h3 class="contact-form__label">
+              Email Address
+            </h3>
+            <input class="contact-form__input" type="email" placeholder="e.g. stephenking@lorem.com" required>
+          </div>
 
-        <div class="contact-form__content">
-          <h3 class="contact-form__label">
-            Phone Number
-          </h3>
-          <input class="contact-form__input"  type="tel" placeholder="e.g. +1 234 567 890" pattern="[0-9]{1}-[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
-        </div>
+          <div class="contact-form__content">
+            <h3 class="contact-form__label">
+              Phone Number
+            </h3>
+            <input class="contact-form__input"  type="tel" placeholder="e.g. +1 234 567 890" pattern="[0-9]{1}-[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+          </div>
+        </form>
+      </div>
         
-        <div class="contact-form__button-container">
-          <button type="button" id="contact-form__previous-button" class="contact-form__button" onclick="nextPrev(-1)">
-            Go Back
-          </button>
+      <div class="contact-form__button-container">
+        <button type="button" id="contact-form__previous-button" class="contact-form__button" onclick="nextPrev(-1)">
+          Go Back
+        </button>
 
-          <button type="button" id="contact-form__next-button" class="contact-form__button" onclick="nextPrev(1)">
-            Next Step
-          </button>
-        </div>
-
-      </form>
+        <button type="button" id="contact-form__next-button" class="contact-form__button" onclick="nextPrev(1)">
+          Next Step
+        </button>
+      </div>
     </div>
+    
   </div>
   <!-- Step 1 end-->
   
@@ -127,5 +130,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+  
+  <script src="function.js"></script>
 </body>
 </html>
