@@ -208,7 +208,6 @@ body {
     margin-top: -56px;
     padding: 10px;
     line-height: 60%;
-    
   }
 
   .sidebar__right {
@@ -255,18 +254,18 @@ body {
     font-size: .8rem;
   }
 
-  .contact-form__button {
-    position: absolute;
-    bottom: 20px;
-    right: 10px;
+  .contact-form__button-container {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 20px 15px;
+    background-color: $white;
   }
 
+  .contact-form__button {
+    border-radius: 5px;
+    font-size: .8rem;
+  }
+  
 }
-
-
-
-
-
-
-
-
