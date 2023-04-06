@@ -142,19 +142,32 @@ body {
 }
 
 .contact-form__button {
-  float: right;
   font-size: 0.9rem;
   font-family: "Ubuntu", sans-serif;
-  font-weight: 400;
-  color: hsl(0, 0%, 100%);
-  background-color: hsl(213, 96%, 18%);
+  font-weight: 500;
   border: none;
   padding: 12px 24px;
   border-radius: 8px;
 }
 
-.contact-form__button:hover {
+#contact-form__previous-button {
+  float: left;
+  color: hsl(213, 96%, 18%);
+  background-color: hsl(0, 0%, 100%);
+}
+
+#contact-form__next-button {
+  float: right;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(213, 96%, 18%);
+}
+
+#contact-form__next-button:hover {
   background-color: hsl(213, 96%, 30%);
+}
+
+#contact-form__previous-button:hover {
+  font-weight: 700;
 }
 
 .attribution {
