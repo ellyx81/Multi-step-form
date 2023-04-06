@@ -95,6 +95,16 @@ body {
   font-weight: 700;
 }
 
+.sidebar__left.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.sidebar__left.finish {
+  background-color: $white;
+  color: $purplish-blue;
+}
+
 .sidebar__right {
   width: 100%;
 }
@@ -114,7 +124,7 @@ body {
 }
 
 .tab {
-  //display: none;
+  display: none;
   padding: 20px 60px;
   color: $marine-blue;
 }
