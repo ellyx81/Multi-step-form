@@ -204,6 +204,7 @@ body {
     display: none;
   }
   .tab {
+    display: none;
     margin: auto;
     margin-top: -70px;
     padding: 0px;
