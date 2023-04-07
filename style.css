@@ -255,7 +255,7 @@ body {
     left: 0;
     bottom: 0;
     width: 100%;
-    padding: 20px 15px;
+    padding: 15px;
     background-color: hsl(0, 0%, 100%);
   }
   .contact-form__button {
