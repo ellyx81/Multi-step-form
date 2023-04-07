@@ -106,7 +106,7 @@ body {
   padding: 10px 0px;
 }
 
-.main-container__tab {
+.contact-form__tab {
   display: none;
   padding: 20px 60px;
   color: hsl(213, 96%, 18%);
@@ -217,7 +217,7 @@ body {
   .sidebar__right {
     display: none;
   }
-  .main-container__tab {
+  .contact-form__tab {
     display: none;
     padding: 0px;
   }
