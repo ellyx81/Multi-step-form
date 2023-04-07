@@ -3,7 +3,7 @@ showTab(currentTab); // Display the current tab
 
 function showTab(n) {
   // This function will display the specified tab of the form ...
-  var x = document.getElementsByClassName("tab");
+  var x = document.getElementsByClassName("main-container__tab");
   x[n].style.display = "block";
   // ... and fix the Previous/Next buttons:
   if (n == 0) {
@@ -14,7 +14,7 @@ function showTab(n) {
   if (n == (x.length - 1)) {
     document.getElementById("contact-form__next-button").innerHTML = "Submit";
   } else {
-    document.getElementById("contact-form__next-button").innerHTML = "Next";
+    document.getElementById("contact-form__next-button").innerHTML = "Next Step";
   }
   // ... and run a function that displays the correct step indicator:
   fixStepIndicator(n)
@@ -22,7 +22,7 @@ function showTab(n) {
 
 function nextPrev(n) {
     // This function will figure out which tab to display
-    var x = document.getElementsByClassName("tab");
+    var x = document.getElementsByClassName("main-container__tab");
     // Exit the function if any field in the current tab is invalid:
     if (n == 1 && !validateForm()) return false;
     // Hide the current tab:
@@ -42,7 +42,7 @@ function nextPrev(n) {
   function validateForm() {
     // This function deals with validation of the form fields
     var x, y, i, valid = true;
-    x = document.getElementsByClassName("tab");
+    x = document.getElementsByClassName("main-container__tab");
     y = x[currentTab].getElementsByTagName("contact-form__input");
     // A loop that checks every input field in the current tab:
     for (i = 0; i < y.length; i++) {
