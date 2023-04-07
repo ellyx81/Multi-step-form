@@ -98,13 +98,9 @@ body {
 }
 
 .sidebar__left.active {
-  opacity: 1;
-}
-
-/* Mark the steps that are finished and valid: */
-.sidebar__left.finish {
-  background-color: $white;
-  color: $purplish-blue;
+  background-color: $pastel-blue;
+  color: $marine-blue;
+  border: $pastel-blue;
 }
 
 .sidebar__right {

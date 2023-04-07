@@ -78,13 +78,9 @@ body {
 }
 
 .sidebar__left.active {
-  opacity: 1;
-}
-
-/* Mark the steps that are finished and valid: */
-.sidebar__left.finish {
-  background-color: hsl(0, 0%, 100%);
-  color: hsl(243, 100%, 62%);
+  background-color: hsl(228, 100%, 84%);
+  color: hsl(213, 96%, 18%);
+  border: hsl(228, 100%, 84%);
 }
 
 .sidebar__right {
