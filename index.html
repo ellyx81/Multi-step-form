@@ -73,6 +73,7 @@
 
           <div class="contact-form__content">
             <h3 class="contact-form__label">Name</h3>
+            <span class="error-message"></span>
             <input
               class="contact-form__input"
               type="text"
@@ -80,7 +81,7 @@
               placeholder="e.g. Stephen King"
               onfocus="this.classList.add('active')"
               onblur="this.classList.remove('active')"
-              oninvalid="this.setCustomValidity('This field is required')"
+              oninvalid="setCustomValidity('This field is required')"
               required
             />
           </div>
