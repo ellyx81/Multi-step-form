@@ -49,7 +49,7 @@ function validateForm() {
     i,
     valid = true;
   x = document.getElementsByClassName("contact-form__tab");
-  y = x[currentTab].getElementsByTagName("contact-form__input");
+  y = x[currentTab].getElementsByTagName("input");
   // A loop that checks every input field in the current tab:
   for (i = 0; i < y.length; i++) {
     // If a field is empty...
