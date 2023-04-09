@@ -168,12 +168,12 @@ body {
   font-size: 1rem;
 }
 
-.contact-form__input:focus {
-  border: 1px solid $purplish-blue;
+.contact-form__input.invalid {
+  border: 1px solid $strawberry-red;
 }
 
-.contact-form__input.invalid {
-  background-color: #ffdddd;
+.contact-form__input.active {
+  border: 1px solid $purplish-blue;
 }
 
 .contact-form__button {

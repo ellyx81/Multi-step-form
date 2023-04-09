@@ -78,7 +78,9 @@
               type="text"
               name="name"
               placeholder="e.g. Stephen King"
-              oninput="this.className = ''"
+              onfocus="this.classList.add('active')"
+              onblur="this.classList.remove('active')"
+              oninvalid="this.setCustomValidity('This field is required')"
               required
             />
           </div>
@@ -90,7 +92,9 @@
               type="email"
               name="email"
               placeholder="e.g. stephenking@lorem.com"
-              oninput="this.className = ''"
+              onfocus="this.classList.add('active')"
+              onblur="this.classList.remove('active')"
+              oninvalid="this.setCustomValidity('This field is required')"
               required
             />
           </div>
@@ -102,7 +106,9 @@
               type="tel"
               name="phone_number"
               placeholder="e.g. +1 234 567 890"
-              oninput="this.className = ''"
+              onfocus="this.classList.add('active')"
+              onblur="this.classList.remove('active')"
+              oninvalid="this.setCustomValidity('This field is required')"
               required
             />
           </div>

@@ -152,12 +152,12 @@ body {
   font-size: 1rem;
 }
 
-.contact-form__input:focus {
-  border: 1px solid hsl(243, 100%, 62%);
+.contact-form__input.invalid {
+  border: 1px solid hsl(354, 84%, 57%);
 }
 
-.contact-form__input.invalid {
-  background-color: #ffdddd;
+.contact-form__input.active {
+  border: 1px solid hsl(243, 100%, 62%);
 }
 
 .contact-form__button {
