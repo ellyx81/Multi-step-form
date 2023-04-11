@@ -1,3 +1,5 @@
+//settings
+
 $marine-blue: hsl(213, 96%, 18%);
 $purplish-blue: hsl(243, 100%, 62%);
 $pastel-blue: hsl(228, 100%, 84%);
@@ -39,6 +41,8 @@ $shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
     url("assets/fonts/ubuntu-bold-webfont.woff") format("woff");
 }
 
+//generic
+
 html {
   box-sizing: border-box;
 }
@@ -49,11 +53,15 @@ html {
   box-sizing: inherit;
 }
 
+//elements
+
 body {
   background-color: $magnolia;
   font-family: "Ubuntu", sans-serif;
   margin: 0px;
 }
+
+//components
 
 .container {
   display: flex;
